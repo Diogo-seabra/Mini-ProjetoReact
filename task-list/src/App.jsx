@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import ItemsContainer from './ItemsContainer';
+import AddItemsContainer from './AddItemsContainer';
 import './App.css';
 function App() {
     const [taskList, setTaskList] = useState(['Lavar roupa', 'Ir ao mercado']);
@@ -12,10 +13,22 @@ function App() {
         setTaskList(newList);
     };
 
+    const addToList = (item) => {
+        // const newList = [...taskList];
+        // newList.push(item);
+        // setTaskList(newList);
+
+        setTaskList([...taskList, item])
+    };
+
     return (
         <div>
             <h1>Minha lista de tarefas do dia</h1>
-            <ItemsContainer taskList={taskList} removeFromList={removeFromList}/>
+            <AddItemsContainer addToList={addToList}/>
+            <ItemsContainer
+                taskList={taskList}
+                removeFromList={removeFromList}
+            />
         </div>
     );
 }
