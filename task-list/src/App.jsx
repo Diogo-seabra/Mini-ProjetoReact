@@ -18,13 +18,13 @@ function App() {
         // newList.push(item);
         // setTaskList(newList);
 
-        setTaskList([...taskList, item])
+        setTaskList([item, ...taskList]);
     };
 
     return (
         <div>
             <h1>Minha lista de tarefas do dia</h1>
-            <AddItemsContainer addToList={addToList}/>
+            <AddItemsContainer addToList={addToList} />
             <ItemsContainer
                 taskList={taskList}
                 removeFromList={removeFromList}

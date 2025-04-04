@@ -1,8 +1,8 @@
 const TaskItem = ({ task, removeFromList }) => {
     return (
-        <div className="task-item">
+        <div className='task-item'>
             <p>{task}</p>
-            <button onClick={() => removeFromList(task)}>Apagar</button>
+            <button onClick={() => removeFromList(task)}>Concluída</button>
         </div>
     );
 };
