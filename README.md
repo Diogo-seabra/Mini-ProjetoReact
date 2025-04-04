@@ -19,6 +19,7 @@ O objetivo deste projeto é colocar em prática meus conhecimentos iniciais de *
 - Passagem de funções como props;
 - Manipulação de eventos;
 - Criação e reutilização de componentes.
+- **Vite**: Ferramenta de build rápida e moderna usada para criar a estrutura base do projeto React.
 
 ## 🛠️ Tecnologias Utilizadas
 
